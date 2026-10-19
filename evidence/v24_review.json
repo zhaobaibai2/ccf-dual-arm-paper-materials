@@ -1,0 +1,72 @@
+{
+  "schema": "offline-teacher-relabel-review-v1",
+  "run": "/home/autodrive/ccf/reports/task2_best_correction_20261010_012349",
+  "trace_sha256": "1404f1043ee4c1037e8d5cccac8d7c735f852268b4824aff567d77407a5d128c",
+  "authorization": "operator requested fine-tuning after completed run",
+  "accepted_interventions": [
+    "1"
+  ],
+  "physical_success_verified": false,
+  "goal_context": "offline reconstructed from logged semantic stage sequence and verified guide endpoints; NOT actual inference query goals",
+  "route_sha256": "2b01a317592411061e6e353e9f0553509de6de861de388b580bccf08779bbc9a",
+  "guide_sha256": "a2c33eca1c17f82b5be5039ecb5bcc2fd11375b9664697dfe3589b1a8bce6e2f",
+  "stage_boundaries": [
+    {
+      "time": 20929.955833334,
+      "node": 0,
+      "name": "task2_right_approach_table"
+    },
+    {
+      "time": 20991.115844117,
+      "node": 1,
+      "name": "task2_right_close_on_table"
+    },
+    {
+      "time": 21003.985862455,
+      "node": 2,
+      "name": "task2_right_lift_from_table"
+    },
+    {
+      "time": 21008.37582946,
+      "node": 3,
+      "name": "task2_right_transport_to_sealer"
+    },
+    {
+      "time": 21044.675825709,
+      "node": 4,
+      "name": "task2_right_lower_to_sealer"
+    },
+    {
+      "time": 21049.265865752,
+      "node": 5,
+      "name": "task2_right_open_on_device"
+    },
+    {
+      "time": 21059.9470712,
+      "node": 6,
+      "name": "task2_right_device_grip_alignment"
+    },
+    {
+      "time": 21078.545848758,
+      "node": 7,
+      "name": "task2_right_close_on_sealed"
+    },
+    {
+      "time": 21087.415853407,
+      "node": 8,
+      "name": "task2_right_lift_from_device"
+    },
+    {
+      "time": 21099.395806973,
+      "node": 9,
+      "name": "task2_right_lower_to_table"
+    },
+    {
+      "time": 21159.205876648,
+      "node": 10,
+      "name": "task2_right_open_on_table"
+    }
+  ],
+  "terminal_hold_training_cap_s": 2.0,
+  "source_logs_modified": false
+}

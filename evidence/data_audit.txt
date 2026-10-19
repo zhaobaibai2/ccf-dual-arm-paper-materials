@@ -1,0 +1,73 @@
+论文数据盘点：2026-10-17
+
+结论：已有可用于轨迹分析、失败分析及纠正训练复现的核心数据，但不能声称所有试验、所有相机、所有成功判据均完整。
+本次仅核验 autodrive 本机。192.168.244.40 的 SSH 重连超时，迁移后新增运行未纳入此次完整盘点。
+原始文件没有改写；本目录只新增清单、校验结果和待人工确认表。它不是原始数据的独立备份。
+
+核验范围
+- 41 个带 samples.jsonl 的录制清单，含真实、合成及派生副本，不能作为独立试验数。
+- 190 个任务相关运行/测试目录，含短测、失败启动及离线数据，不能直接用于计算成功率。
+- 完整解析 samples/predictions JSONL；核对引用帧文件存在性。没有发现引用文件缺失。
+- NPZ 仅抽查每条流第一帧的可读性、字段、形状和图像有效像素，不是所有图像的逐帧 CRC/质量校验。
+- 控制轨迹仅检查是否存在及尾部结束记录，未对所有控制周期逐一验证时间对齐。
+- v24 重标注训练集的 2505 个窗口逐个做 SHA256 检查，全部一致；原教师执行轨迹 SHA256 与训练索引一致。
+
+各任务演示数据
+1. 新任务一：reports/task1_tuned_full_x2dnbi4p/episode
+   4797 帧，239.76 秒，约 20Hz，录制 dropped=5，引用帧缺失=0；录制报告无超过150ms间隙。
+   三路 RGB uint8 [3,240,320,3]、深度毫米 uint16 [3,240,320]；samples 包含26维实测状态、26维发送参考和时戳；另有阶段标记和分段。
+   父目录 outcome: execution_complete=true, motion_sequence_completed=true, error=null。
+   success=false / 自动实物验证=false，不能据此判定实物失败，也不能直接当作成功标注。
+2. 任务二训练源：reports/task2full_record_vxa9bw8p/episode
+   4996 帧，249.71 秒，dropped=4，引用帧缺失=0；录制报告无超过150ms间隙。
+   三路RGB/深度、状态、参考及分段仍在；v23与top-camera训练meta均引用此episode，处理后保留4518样本。
+   成功与分段review标志未完成规范化审核。
+3. 任务三示例：reports/task3full_record_6t3lvw1g/episode
+   7443 帧，372.06 秒，dropped=2，引用帧缺失=0；父目录outcome motion_completed=true,error=null。
+   阶段标签含1847个unknown样本，且reviewed=false，需核对阶段覆盖后使用。
+4. taskNfull_record_* 目录统计：任务一9个（7个非空），任务二15个（15个非空），任务三6个（6个非空）。
+   这些是录制目录数，包含中断/短录制，不代表完整成功演示数量。
+5. data/episode_000000 是单独的旧录制：manifest声明991帧、33秒，包含telemetry和三路视频；本次只检查结构，不算作新任务一演示。
+
+网络实机运行
+- predictions.jsonl 对应 observations/*.npz，可包含状态历史、实际输入图像、网络动作块、事件/进度和时间。
+- owner_trace.jsonl 或 reports/visual_cup/<job_id>.jsonl 保存实际发送目标与实测状态；网络预测不能替代实际控制轨迹。
+- model_meta/outcome/job/software_snapshot 用于关联模型SHA、运行结果、控制任务和软件版本；并非每次都有完整的软件快照。
+- 后期 B 路线抽查：真实top RGB/深度，两个腕部槽位为0；policy_images只有1个view，不能表述为三路真实相机输入。
+- 早期任务二纠正运行抽查三路RGB/深度均有有效像素。
+- 数据多为存储分辨率320x240，不等于传感器原生640分辨率视频；主机接收时间对齐不等于曝光硬同步。
+
+任务二关键失败/纠正/成功案例
+失败候选 reports/task2_full_20261009_232116：3116个网络观察，图像索引完整，owner_trace有end；结果failed、CAN故障。是否对应现场所述“取杯后跑偏”仍需人工/图像复核，不能只凭故障类型归因模型。
+纠正主记录 reports/task2_best_correction_20261010_012349：2778个网络观察，5558个独立采集观察；日志saved吻合，无丢帧错误，引用帧齐全；owner_trace有end且error=null。
+  时长277.87秒，teacher_cycles=27000, corrected_policy_cycles=10；最终cancelled_holding。
+  action_teacher_source明确为 CONTROL_TEACHER, not human teleoperation。
+  该记录是v24训练来源；cancelled_holding并不自动证明实物任务失败或成功。
+成功候选 reports/task2_nogoal_trial_20261017_144931_1453651：2442个网络观察，244.42秒，status=passed，owner_trace正常end；用户曾反馈该版任务完成良好。
+  文件physical_task_success仍为false，因此论文成功统计需补充具名人工审核/视频证据，而非将该字段直接改成true。
+
+不完整记录/应保留的失败材料
+- task2_online_correction_20261009_235101：0网络帧、0采集帧，相机同步启动失败。
+- task2_online_correction_20261010_000252：0网络帧、1采集帧，BrokenPipe。
+- task2_online_correction_20261010_001729：0网络帧、2采集帧，BrokenPipe。
+- task2_online_correction_20261010_011143：36网络帧、75采集帧，约3.64秒手部反馈陈旧故障。是短失败片段，不是完整任务。
+- task2_online_correction_20261010_004935：2839网络帧、5679采集帧、控制trace正常end，但无outcome.json。
+- task2_best_correction_20261010_013155：2445网络帧、4891采集帧、控制trace正常end，但无outcome.json。
+- task2_fixed_trial_20261016_164609_114005：3677网络帧，无outcome，控制trace末尾仍是tick。
+- task3_prefix_full_20261010_114346：962个可解析预测记录，另有1条无效JSON；无outcome，控制trace末尾为tick。
+不要把无法恢复的启动失败补造成完整轨迹，也不要把无outcome的运行直接计为成功。
+
+微调链条
+reports/training_current_20261010/prepare_task2_teacher_relabel.py 与日志、task2_v24_teacher_relabel_data/{meta,review,index}.json、windows/*.npz、task2_v24_train.log、v24 checkpoint及report仍在。
+v23父权重SHA bef06db4... -> v24权重SHA dec607cc...，报告记录父权重加载与参数更新。
+2505个训练窗口经过离线阶段目标重建，same_query_dagger=false；属于真实教师执行数据的离线重标注及微调，不能写成机器人运行时在线更新参数，亦不能写成人工同查询DAgger。
+训练report independent_validation=false；before/after拟合误差不能作为独立泛化或实物成功率证据。
+
+论文使用前待完成
+1. 依据现场确认/视频补 physical_result_review.csv：成功/失败/未完成/启动失败及依据；保留原始success字段。
+2. 为每个实机对比试验保存模型SHA、软件版本、路由A/B、运行时手型修正与进度恢复设置。相同权重不等于相同行为。
+3. 独立标注任务二跑偏时刻、接管时刻、教师来源、纠正后完成时刻，区分相机/CAN/反馈故障与策略失败。
+4. 补齐新机器运行清单，并为完整数据做第二份独立备份；不要仅备份模型权重。
+5. 如需宣称所有帧完整，另做全量NPZ可读性/CRC、时间戳连续性、相机有效性与完整任务覆盖审核。
+
+本目录文件：inventory.json完整索引；episodes.csv和runs.csv摘要；physical_result_review.csv人工标注模板；v24_training_integrity.json训练数据校验；key_evidence_sha256.txt关键证据指纹；audit.py可复跑只读盘点程序。

@@ -1,0 +1,44 @@
+{
+  "task1_A": {
+    "entry": "task1_tuned_full.sh --execute --speed-multiplier 3 --stay-at-place",
+    "method": "tuned demonstration trajectory, not a network",
+    "speed_multiplier": 3,
+    "return_speed_multiplier": 4
+  },
+  "task1_B": {
+    "entry": "task1_nogoal.sh run --execute --full",
+    "model": "assets/task1_b.pt",
+    "method": "state history + measured scalar progress + CNN; no goal26",
+    "local_recovery": true,
+    "validation_note": "local recovery tested offline on recorded stall; not newly hardware validated",
+    "weight_sha256": {
+      "assets/task1_b.pt": "b7ca22076eee0fe0915d012b4a0239047367b9b4596e03e2e4cdfac0c2c88175"
+    }
+  },
+  "task2_A": {
+    "entry": "task2_fixed.sh run --execute --full",
+    "model": "assets/task2_a/model.pt",
+    "method": "v24 goal-conditioned model with CONTROL_TEACHER correction",
+    "sealed_pickup_index_raw": 205,
+    "sealed_pickup_pinky_raw": 210,
+    "weight_sha256": {
+      "assets/task2_a/model.pt": "dec607cc09b3041ebf81298aa0e20523a64bc7a634bfe35d9b0a14c3d69949bf"
+    }
+  },
+  "task2_B": {
+    "entry": "task2_nogoal.sh run --execute --full",
+    "models": [
+      "assets/task2_b_actions.pt",
+      "assets/task2_b_phase.pt"
+    ],
+    "method": "state history + measured progress + learned phase + CNN; runtime hand override and bounded recovery",
+    "first_grasp_index_raw": 205,
+    "first_grasp_pinky_raw": 220,
+    "second_grasp_index_raw": 205,
+    "second_grasp_pinky_raw": 210,
+    "weight_sha256": {
+      "assets/task2_b_actions.pt": "5d85578e84bbbabc75da5c949bd6acf769bba885a6b6682ae1321076e4fc7af1",
+      "assets/task2_b_phase.pt": "81a96354fe531f5981cb7fa957616545fa793efaa45fce22288a2d702c6c246f"
+    }
+  }
+}

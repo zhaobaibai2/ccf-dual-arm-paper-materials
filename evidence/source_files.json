@@ -1,0 +1,37 @@
+[
+  {
+    "file": "progress_policy.py",
+    "source_snapshot": "task12_AB_20261018_104551",
+    "sha256": "d7faf5475e988d688ffb87a49271fbaa130300c649ad42dad1d32d9c06db475c"
+  },
+  {
+    "file": "phase_policy.py",
+    "source_snapshot": "task12_AB_20261018_104551",
+    "sha256": "8356da0a0cdbc64ff6cffac5b62b574bf9f18c3cfb15aaca9a27cf1ddc0de8a7"
+  },
+  {
+    "file": "progress_hand.py",
+    "source_snapshot": "task12_AB_20261018_104551",
+    "sha256": "0a49fa2a356dd07ec104dde6a997bb89aa9de3b54b4fe91e303dd04e7cd24c2b"
+  },
+  {
+    "file": "progress_control.py",
+    "source_snapshot": "task12_AB_20261018_104551",
+    "sha256": "6b886dc2fb89f702725883d8aefdde4f63aeae0c7718c863668980272eb9f4b1"
+  },
+  {
+    "file": "task2_progress_control.py",
+    "source_snapshot": "task12_AB_20261018_104551",
+    "sha256": "97e24c6f1e48297368f5687032ed70a706ecff925e15f3fccb89d35de1f02a3d"
+  },
+  {
+    "file": "recovery_progress.py",
+    "source_snapshot": "task12_AB_20261018_104551",
+    "sha256": "38123525bb8a83c82849b684c94a0e197394aaeb313ff90a36767daf7d7c3106"
+  },
+  {
+    "file": "research_network.py",
+    "source_snapshot": "task12_AB_20261018_104551",
+    "sha256": "cd4a87ab2bb65ced54a0bd8d8c101b932963e2d3dc8a3e1511af8bf87967e911"
+  }
+]

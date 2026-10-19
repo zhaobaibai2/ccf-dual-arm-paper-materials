@@ -1,0 +1,7 @@
+{
+  "windows": 2505,
+  "missing_or_hash_mismatch": [],
+  "source_trace_sha256": "1404f1043ee4c1037e8d5cccac8d7c735f852268b4824aff567d77407a5d128c",
+  "source_trace_matches_index": true,
+  "scope": "all 2505 training window hashes verified; original run frame arrays only sampled separately"
+}

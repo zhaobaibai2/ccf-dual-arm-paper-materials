@@ -1,0 +1,127 @@
+path,automatic_status,recorded_physical_success,operator_reviewed_result,evidence_file,notes
+/home/autodrive/ccf/reports/task12_routes_20261017_151928_1859619/task1,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task12_routes_20261017_153226_1975979/task1,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task12_routes_20261017_154255_2120530/task1,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task12_routes_20261017_155622_2230201/task1,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task12_routes_20261017_155622_2230201/task2,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task12_routes_20261017_164120_2744464/task1,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task12_routes_20261017_164120_2744464/task2,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task12_routes_20261017_170931_3153340/task2,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_bc_shadow_20261008_v3,,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_bc_test,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_bc_test_script_smoke_20261008,,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_drift_full_20261010_100545,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_drift_full_20261010_135034,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_drift_full_20261010_135441,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_drift_short_20261010_100114,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial10,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial12,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial13,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial15,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial16,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial17,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial19,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial2,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial20,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial22,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial23,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial24,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial25,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial26,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial28,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial29,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial4,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial5,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial6,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial8,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_fixed_trial9,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_full_workflow_retry_20261009_225355,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_manual_trial_2,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_nogoal_trial_20261017_150234_1587953,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_nogoal_trial_20261017_151125_1696383,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_preset_test_20261008_234352,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_progress_cnn_trial_20261017_125657_147200,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_progress_cnn_trial_20261017_130052_151348,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_progress_cnn_trial_20261017_130145_154385,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_progress_cnn_trial_20261017_132648_272506,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_progress_cnn_trial_20261017_132747_276519,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_top_nogoal_full_20261010,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_top_nogoal_real_5s,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_best_correction_20261010_012349,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_best_correction_20261010_013155,,,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_fixed_trial2,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_fixed_trial5,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_fixed_trial_20261016_161733_89558,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_fixed_trial_20261016_164609_114005,,,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_fixed_trial_20261017_095345_23070,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_fixed_trial_20261017_100759_31081,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_fixed_trial_20261017_102255_36709,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_full_20261009_232116,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_goal_full_20261016_151055_32994,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_loop_20261017_104220_68375_1,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_loop_20261017_105607_89829_1,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_loop_20261017_111759_111016_1,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_loop_20261017_131801_252006_1,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_new_short_20261016_150932_32994,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_nogoal_trial_20261017_134334_441896,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_nogoal_trial_20261017_134503_444531,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_nogoal_trial_20261017_140137_574114,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_nogoal_trial_20261017_140340_578006,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_nogoal_trial_20261017_141422_676626,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_nogoal_trial_20261017_141528_680120,passed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_nogoal_trial_20261017_142630_872164,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_nogoal_trial_20261017_142721_875577,passed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_nogoal_trial_20261017_143822_1290846,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_nogoal_trial_20261017_143928_1294348,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_nogoal_trial_20261017_144713_1448776,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_nogoal_trial_20261017_144838_1452437,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_nogoal_trial_20261017_144931_1453651,passed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_online_correction_20261010_004935,,,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_online_correction_20261010_011143,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_short_20261009_230731,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_v24_full_trial,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_v24_full_trial2,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task2_v24_short_check,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task3_goal_full_20261010_110555,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task3_goal_short_20261010_110039,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task3_prefix_full_20261010_114346,,,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task3_prefix_full_20261010_144816,failed,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task3_prefix_short_20261010_114332,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task3_prefix_short_20261010_144759,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task3_prefix_short_20261010_150537,cancelled_holding,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/training_current_20261010/task1_top_nogoal_shadow_20261010_044258,,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/training_current_20261010/task2_top_nogoal_shadow_toponly_20261010_044729,,False,UNREVIEWED,,False is not by itself a verified physical failure
+/home/autodrive/ccf/reports/task1_record_20260929_bu76E6/run/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task1_record_retry_20260929_W4eBrP/run/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task1_tuned_full_x2dnbi4p/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task1full_record_0b8ap2nq/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task1full_record_3t_7eibd/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task1full_record_99dt7kuj/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task1full_record_jqynbg0z/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task1full_record_m4ogimy1/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task1full_record_rmqoyd9v/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task1full_record_x_tsktzs/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task2full_record_3ik85rz7/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task2full_record_6dqt4ymc/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task2full_record_a5zjl0l0/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task2full_record_au7s69_i/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task2full_record_c_akgzvl/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task2full_record_e_ur6jkr/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task2full_record_j7wjnoo1/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task2full_record_mhmr8clh/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task2full_record_o6zruho4/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task2full_record_pceyofys/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task2full_record_t9rxnldj/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task2full_record_udz8e1xv/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task2full_record_vxa9bw8p/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task2full_record_whrluzl1/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task2full_record_xa30m3fa/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task3full_record_5uz_7_02/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task3full_record_6t3lvw1g/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task3full_record_cc59h6tm/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task3full_record_e07pubri/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task3full_record_jny5_fs3/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/task3full_record_l8effq2z/episode,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/training_current_20261009/pi05_rgb_sources/task1,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
+/home/autodrive/ccf/reports/training_current_20261009/pi05_rgb_sources/task2,recorded,False,UNREVIEWED,,Check complete task coverage and operator/video evidence
